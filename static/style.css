@@ -367,3 +367,25 @@ button:hover {
     font-weight: bold;
     text-shadow: none;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .books-container {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
