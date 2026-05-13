@@ -1,0 +1,72 @@
+<!DOCTYPE html>  
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Book Store</h1>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/books">Books</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Book Store</h2>
+            <p>Discover a wide collection of Arabic and international books</p>
+            <a href="books.html" class="btn">View All Books</a>
+        </div>
+        
+        <div class="hero-gif">
+            <img src="{{ url_for('static', filename='images all/.gif') }}" alt="Book Animation">
+        </div>
+    </section>
+
+    <!-- Latest Releases -->
+    <section class="books-preview">
+        <h2>Latest Releases</h2>
+
+        <div class="books-container">
+
+            <div class="book-card">
+                <img src="{{ url_for('static', filename='images all/The Hunger Games.jpg') }}" alt="The Hunger Games">
+                <h3>The Hunger Games</h3>
+            </div>
+
+            <div class="book-card">
+                <img src="{{ url_for('static', filename='images all/Divergent.jpg') }}" alt="Divergent">
+                <h3>Divergent</h3>
+            </div>
+
+            <div class="book-card">
+                <img src="{{ url_for('static', filename='images all/Les Misérables.jpg') }}" alt="Les Misérables">
+                <h3>Les Misérables</h3>
+            </div>
+
+        </div>
+
+        <a href="/books" class="btn">View All Books</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>©️ 2026 Book Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

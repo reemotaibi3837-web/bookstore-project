@@ -1,0 +1,146 @@
+<!DOCTYPE html>  
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">Book Store</h1>
+
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/books">Books</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<input type="text" id="searchInput" placeholder="Search books...">
+
+<section class="books-preview">
+    <h2>📚 Books Collection</h2>
+
+    <div class="categories">
+        <button>Classic</button>
+        <button>Dystopian</button>
+        <button>Drama</button>
+        <button>Fantasy</button>
+        <button>Horror</button>
+        <button>Romance</button>
+    </div>
+
+    <h3>Classic</h3>
+    <div class="books-container">
+
+        <div class="book-card">
+            <img src="{{ url_for('static', filename='images all/Les Misérables.jpg') }}" alt="Les Misérables">
+            <h3>Les Misérables</h3>
+            <p>A story of justice, love, and redemption in France.</p>
+            <p class="price">60 SAR</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <img src="{{ url_for('static', filename='images all/Anna Karenina.jpg') }}" alt="Anna Karenina">
+            <h3>Anna Karenina</h3>
+            <p>A tragic love story in Russian society.</p>
+            <p class="price">65 SAR</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <img src="{{ url_for('static', filename='images all/Dracula.jpg') }}" alt="Dracula">
+            <h3>Dracula</h3>
+            <p>A classic horror story about a vampire.</p>
+            <p class="price">30 SAR</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+    </div>
+
+    <h3>Dystopian</h3>
+    <div class="books-container">
+        
+        <div class="book-card">
+            <img src="{{ url_for('static', filename='images all/The Hunger Games.jpg') }}" alt="The Hunger Games">
+            <h3>The Hunger Games</h3>
+            <p>A dystopian novel about a deadly competition where teenagers fight to survive.</p>
+            <p class="price">45 SAR</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <img src="{{ url_for('static', filename='images all/Divergent.jpg') }}" alt="Divergent">
+            <h3>Divergent</h3>
+            <p>A girl discovers she doesn't belong to any faction in a divided society.</p>
+            <p class="price">40 SAR</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <img src="{{ url_for('static', filename='images all/The Giver.jpg') }}" alt="The Giver">
+            <h3>The Giver</h3>
+            <p>A boy discovers the dark truth behind his perfect world.</p>
+            <p class="price">35 SAR</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <img src="{{ url_for('static', filename='images all/The Handmaid’s Tale.jpg') }}" alt="The Handmaid’s Tale">
+            <h3>The Handmaid’s Tale</h3>
+            <p>A dystopian society controlling women.</p>
+            <p class="price">55 SAR</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+    </div>
+
+    <h3>Drama</h3>
+    <div class="books-container">
+
+        <div class="book-card">
+            <img src="{{ url_for('static', filename='images all/The Kite Runner.jpg') }}" alt="The Kite Runner">
+            <h3>The Kite Runner</h3>
+            <p>A powerful story about friendship and redemption.</p>
+            <p class="price">55 SAR</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <img src="{{ url_for('static', filename='images all/The Help.jpg') }}" alt="The Help">
+            <h3>The Help</h3>
+            <p>A story about racism and maids in the 1960s.</p>
+            <p class="price">50 SAR</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+    </div>
+
+    <h3>Fantasy</h3>
+    <div class="books-container">
+
+        <div class="book-card">
+            <img src="{{ url_for('static', filename='images all/City of Bones.jpg') }}" alt="City of Bones">
+            <h3>City of Bones</h3>
+            <p>A girl discovers a hidden magical world.</p>
+            <p class="price">45 SAR</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>©️ 2026 Book Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
