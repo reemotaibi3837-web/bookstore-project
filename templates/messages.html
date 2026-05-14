@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Messages</title>
+</head>
+
+<body>
+
+    <h1>Submitted Messages</h1>
+
+    {% for row in data %}
+
+        <div style="border:1px solid black; margin:20px; padding:15px;">
+            <p><strong>Name:</strong> {{ row[1] }}</p>
+            <p><strong>Email:</strong> {{ row[2] }}</p>
+            <p><strong>Phone:</strong> {{ row[3] }}</p>
+            <p><strong>Message:</strong> {{ row[4] }}</p>
+        </div>
+
+    {% endfor %}
+
+</body>
+</html>
