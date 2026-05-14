@@ -59,18 +59,6 @@ def submit_form():
 
     return "Message saved successfully!"
 
-@app.route('/messages')
-def messages():
-
-    conn = sqlite3.connect('messages.db')
-    cursor = conn.cursor()
-
-    cursor.execute("SELECT * FROM contacts")
-    data = cursor.fetchall()
-
-    conn.close()
-
-    return render_template('messages.html', data=data)
 
 if __name__ == '__main__':
     app.run(debug=True)
