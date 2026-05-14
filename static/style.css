@@ -371,21 +371,123 @@ button:hover {
 @media (max-width: 768px) {
 
     body {
-        padding: 10px;
+        padding: 0;
     }
 
-    .navbar {
+    /* HEADER */
+
+    header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* LOGO */
+
+    .logo {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    /* NAVBAR */
+
+    .nav-links {
         flex-direction: column;
         align-items: center;
+        gap: 12px;
     }
 
-    .books-container {
-        flex-direction: column;
+    .nav-links li {
+        width: 80%;
+        text-align: center;
     }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    /* HERO GIF */
+
+    .hero-gif {
+        justify-content: center;
+    }
+
+    .hero-gif img {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* SEARCH */
+
+    #searchInput {
+        width: 85%;
+        margin: 20px auto;
+    }
+
+    /* BOOKS */
+
+    .books-container {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .book-card {
+        width: 140px;
+        flex: 0 0 140px;
+    }
+
+    .book-card img {
+        height: 200px;
+    }
+
+    /* ABOUT PAGE */
+
+    .about-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .about-page h2,
+    .about-page h3 {
+        font-size: 26px;
+    }
+
+    /* CONTACT PAGE */
+
+    .contact-page {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact-page h2 {
+        font-size: 28px;
+    }
+
+    /* GENERAL IMAGES */
 
     img {
         max-width: 100%;
         height: auto;
     }
-
 }
