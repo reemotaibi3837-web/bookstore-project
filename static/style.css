@@ -1,13 +1,12 @@
 body { 
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-
-    background-image: url("polkadotlace.png");
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    font-family: 'Arial', sans-serif; 
+    margin: 0; 
+    line-height: 1.6; 
+    
+    background-image: url("polkadotlace.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
 }
 
 /* OVERLAY */
