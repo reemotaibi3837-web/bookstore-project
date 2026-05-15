@@ -1,18 +1,22 @@
-from flask import Flask, render_template, request, redirect, url_for
-import sqlite3
-import os
-
+from flask import Flask, render_template, request, redirect
 from flask_admin import Admin, AdminIndexView, expose
 from flask_admin.contrib.sqla import ModelView
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
+# =========================
 # SECRET KEY
+# =========================
+
 app.config['SECRET_KEY'] = 'bookstore_secret'
 
+# =========================
 # DATABASE CONFIG
+# =========================
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///messages.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
@@ -32,7 +36,10 @@ class Contact(db.Model):
 
     message = db.Column(db.Text)
 
+# =========================
 # CREATE DATABASE
+# =========================
+
 with app.app_context():
     db.create_all()
 
@@ -126,10 +133,9 @@ def submit_form():
     )
 
     db.session.add(new_message)
-
     db.session.commit()
 
-    return redirect('/contact')
+    return redirect('/admin')
 
 # =========================
 
