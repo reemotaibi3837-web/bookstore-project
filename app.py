@@ -135,7 +135,7 @@ def submit_form():
     db.session.add(new_message)
     db.session.commit()
 
-    return redirect('/admin')
+    return redirect('/contact')
 
 # =========================
 
