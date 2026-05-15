@@ -81,7 +81,6 @@ class MyAdminIndexView(AdminIndexView):
 admin = Admin(
     app,
     name='Book Store Admin',
-    template_mode='bootstrap4',
     index_view=MyAdminIndexView()
 )
 
